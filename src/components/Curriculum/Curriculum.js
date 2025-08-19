@@ -14,7 +14,7 @@ function Curriculum() {
 
 	useEffect(() => {
 		async function fetchData() {
-			const response = await fetch('https://josecarlosroman.com/api/skills/categories');
+			const response = await fetch('https://josecarlosroman.com/api/categories/skills');
 			const skills = await response.json();
 			setSkills(skills);
 		}
@@ -52,8 +52,8 @@ function Curriculum() {
 			</Section>
 			<Section title="Conocimientos">
 				<div className={classes.skills}>
-					{skills.length > 0 && skills.map((area) => (
-						<Skill key={area.title} name={area.title} skills={area.skills.map(skill => skill.name)} />
+					{skills.length > 0 && skills.map((cat) => (
+						<Skill key={cat.name} name={cat.name} skills={cat.skills.map(skill => skill.name)} />
 					))}
 				</div>
 			</Section>
