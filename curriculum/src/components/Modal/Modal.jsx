@@ -1,12 +1,13 @@
 import Button from '../Button/Button';
+import classes from './Modal.module.css';
 
 export default function Modal({ ref, children, onReset }) {
 	return (
-		<dialog ref={ref} onClose={onReset}>
+		<dialog ref={ref} className={classes.Modal} onClose={onReset}>
 			{children}
 			<form method="dialog" onSubmit={onReset}>
-        <Button>CLOSE</Button>
-      </form>
+				<Button>CERRAR</Button>
+			</form>
 		</dialog>
 	)
 }

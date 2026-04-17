@@ -13,37 +13,20 @@ function Curriculum() {
 	const [skills, setSkills] = useState([]);
 
 	useEffect(() => {
-		async function fetchData() {
-			const response = await fetch('https://josecarlosroman.com/api/categories/skills');
-			const skills = await response.json();
-			setSkills(skills);
-		}
-		fetchData();
+		// async function fetchData() {
+		// 	const response = await fetch('https://josecarlosroman.com/api/categories/skills');
+		// 	const skills = await response.json();
+		// 	setSkills(skills);
+		// }
+		// fetchData();
+		setProjects(BACKGROUND.projects);
+		setSkills(BACKGROUND.skills);	
 	}, []);
-
-	useEffect(() => {
-		//axios.get('https://josecarlosroman.com/wp-json/wp/v2/project/?exclude=361090') // maybe to change the GET request
-		//	.then(response => this.setState({ projects: response.data }))
-		//	.catch(error => console.log(error))
-		// TO-DO: build the new API and consume the projects by using the JS Fetch API instead of axios.
-		// in the meantime I am adding some hardcoded projects
-		setProjects([
-			{
-				title: 'DonDivi',
-			},
-			{
-				title: 'Sistema de información de laboratorio',
-			},
-			{
-				title: 'Software de entrenamiento deportivo',
-			}
-		])
-	}, [])
 
 	let projectsList = <Spinner />
 
 	if (projects)
-		projectsList = <CustomList items={projects.map(p => p.title)} projects={projects} />
+		projectsList = <CustomList items={projects.map(p => p.title)} projects={projects} />;
 
 	return (
 		<div className={classes.curriculum}>
