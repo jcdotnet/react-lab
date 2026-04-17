@@ -1,0 +1,27 @@
+.list ul{
+    list-style-type: none;
+}
+
+.list li {
+    display: flex;
+    padding: 10px;
+}
+
+.list button {
+    margin-left: auto;
+}
+
+.listIcon {
+    width: 1.2rem;
+    height: 1.2rem;
+    color: #FFF;
+}
+
+@media (max-width: 991px) {
+    .list li {
+        flex-direction: column;
+    }
+    .listIcon {
+        display: none;
+    }  
+}

@@ -1,0 +1,36 @@
+.sectionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #999;
+    cursor: pointer;
+}
+
+.sectionHeader h3 {
+    margin: 0.5rem 0;
+    padding-top: 0.2rem;
+}
+
+.sectionHeaderIcon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.sectionContent {
+    display: grid; 
+    grid-template-rows: 0fr;
+    background-color: #FFF;
+    transition: all 0.4s;
+}
+
+.section.open .sectionContent {
+    grid-template-rows: 1fr;
+}
+
+.sectionContent > div {
+  overflow: hidden;
+}

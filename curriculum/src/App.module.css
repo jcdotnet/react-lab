@@ -1,0 +1,20 @@
+.Main {
+  display: flex;
+  justify-content: center;
+}
+
+.Sidebar {
+  padding: 1rem;
+  flex: 1;
+}
+
+.Content {
+  padding: 1rem;
+  flex:2;
+}
+
+@media (max-width: 991px) {
+  .Main {
+    flex-direction: column;
+  }
+}
