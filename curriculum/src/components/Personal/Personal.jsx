@@ -14,7 +14,7 @@ export default function Personal() {
 			</li>
 			<li>
 				<svg className={classes.Icon}><use xlinkHref={Sprite + '#icon-mail'}></use></svg>
-				<a href="mailto:contact@josecarlosroman.com">contact@josecarlosroman.com</a>
+				<a href="mailto:hello@josecarlosroman.com">hello@josecarlosroman.com</a>
 			</li>
 			<li>
 				<svg className={classes.Icon}><use xlinkHref={Sprite + '#icon-linkedin'}></use></svg>

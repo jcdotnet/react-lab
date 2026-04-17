@@ -3,7 +3,7 @@ export const BACKGROUND = {
 		'Ingeniería Técnica en Informática (Universidad de Málaga)'
 	],
 	courses: [
-		'2016 - Actualidad. Formación continua en .NET/C#+ y tecnologías modernas',
+		'2016 - Actualidad. Formación continua en .NET/C# y tecnologías modernas',
 		'2012. English B1 certificate (EOI Málaga)',
 		'2007. MCTS (.NET 2.0, Forman, PTA Málaga)',
 		'2006. Desarrollo de aplicaciones en J2EE (Forman, PTA Málaga)'
