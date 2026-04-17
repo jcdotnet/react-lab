@@ -12,6 +12,25 @@ export const BACKGROUND = {
 		'Ene 2016 - Mar 2025. Ingeniero de Software Independiente (Consultoría y Desarrollo)',
 		'Jun 2014 - Dic 2014. Lead .NET Developer en Bolt Accelerator (Startup en incubación)'
 	],
+	projects: [
+		{
+			title: 'DonDivi (Adquirido por Elegant Themes)',
+			description: 'Suite de extensiones premium para WordPress. Lideré el desarrollo técnico y la arquitectura hasta su adquisición global en 2025.'
+		},
+		{
+			title: 'Consultoría y Desarrollo Fullstack (Clientes Internacionales)',
+			description: 'Creación de herramientas propias y mantenimiento de sistemas existentes'
+
+		},
+		{
+			title: 'Sistema de Información de Laboratorio (SIL)',
+			description: 'Desarrollo de aplicación de escritorio en .NET con interfaz WPF para la gestión de datos de salud.'
+		},
+		{
+			title: 'Software de Gestión de Entrenamiento Deportivo',
+			description: 'Sistema distribuido en .NET desarrollado como Proyecto Fin de Carrera. Implementé una arquitectura cliente-servidor con WinForms para la planificación del entrenamiento de deportistas profesionales.'
+		}
+	],
 	skills: [
 		{
 			// Programming Languages
