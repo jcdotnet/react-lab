@@ -13,12 +13,13 @@ function Curriculum() {
 	const [skills, setSkills] = useState([]);
 
 	useEffect(() => {
-		async function fetchData() {
-			const response = await fetch('https://josecarlosroman.com/api/categories/skills');
-			const skills = await response.json();
-			setSkills(skills);
-		}
-		fetchData();
+		// async function fetchData() {
+		// 	const response = await fetch('https://josecarlosroman.com/api/categories/skills');
+		// 	const skills = await response.json();
+		// 	setSkills(skills);
+		// }
+		// fetchData();
+		setSkills(BACKGROUND.skills);	
 	}, []);
 
 	useEffect(() => {
